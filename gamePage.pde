@@ -13,6 +13,7 @@ void gamePage(){
       if(GAME_SETTINGS.gridHolder[0][j][i] == 'o') image(oDoor, i * w, j * h, w, h);
       else if(GAME_SETTINGS.gridHolder[0][j][i] == 'd') image(door, i * w, j * h, w, h);
       else if(GAME_SETTINGS.gridHolder[0][j][i] == 'r') image(rock, i * w, j * h, w, h);
+      else if(GAME_SETTINGS.gridHolder[0][j][i] == 'b') image(background, i * w, j * h, w, h);
       if(GAME_SETTINGS.gridHolder[0][j][i] == 's') {
         image(sand, i * w, j * h, w, h);
       }
