@@ -6,11 +6,14 @@ void gamePage(){
   
    int currentTime = millis();
   background(0);
-  for(int i = 0; i < n; ++i){
-    for(int j = 0; j < m; ++j){
-      if(grid[i][j] == 'o') image(oDoor, i * w, j * h, w, h);
-      else if(grid[i][j] == 'd') image(door, i * w, j * h, w, h);
-      if(grid[i][j] == 's') {
+  for(int j = 0; j < n; ++j){
+    for(int i = 0; i < m; ++i){
+      
+    
+      if(GAME_SETTINGS.gridHolder[0][j][i] == 'o') image(oDoor, i * w, j * h, w, h);
+      else if(GAME_SETTINGS.gridHolder[0][j][i] == 'd') image(door, i * w, j * h, w, h);
+      else if(GAME_SETTINGS.gridHolder[0][j][i] == 'r') image(rock, i * w, j * h, w, h);
+      if(GAME_SETTINGS.gridHolder[0][j][i] == 's') {
         image(sand, i * w, j * h, w, h);
       }
     }

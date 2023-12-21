@@ -25,6 +25,7 @@ img = loadImage("background.png");
    front = loadImage("front.png");
    door = loadImage("door.jpg");
    oDoor = loadImage("openDoor.jpg");
+   rock = loadImage("rock.png");
    textFont(font);
 
 };
